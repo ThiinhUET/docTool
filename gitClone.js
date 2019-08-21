@@ -1,30 +1,30 @@
 const git = require('simple-git');
 const Promise = require('promise');
-var gitRespo = ["https://github.com/tunghoang/wi-auth", "https://github.com/tunghoang/wi-backend"];
-
+const config = require('config');
+var gitRespo = config.get('gitRepo');
 
 const path = './gitRespo';
 
-function cloneSubGit(str){
+function cloneSubGit(str) {
 
-    let tmp = path+"/"+str;
+    let tmp = path + "/" + str;
     git(tmp).clone(jsDoc_gen);
 }
 
-function cloneMainRepo(repo, cb){
+function cloneMainRepo(repo, cb) {
     git(path).clone(repo);
     cb();
 }
 
 
 
-function cloneGit(repo){
-    return new Promise(function(resolve, reject){
-        setTimeout(cloneMainRepo(repo, () =>{
+function cloneGit(repo) {
+    return new Promise(function (resolve, reject) {
+        setTimeout(cloneMainRepo(repo, () => {
             let str = repo.slice(29);
             cloneSubGit(str);
-        }),120000);
-        
+        }), 120000);
+
     })
 }
 

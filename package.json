@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.2.2",
     "fs": "0.0.1-security",
     "promise": "^8.0.3",
     "simple-git": "^1.124.0"
