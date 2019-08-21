@@ -4,9 +4,8 @@ node gitClone.js
 node jsDoc.js
 for folder in gitRespo/*
 do
-    echo $folder
-    chmod 777 $folder
     cd $folder
     cd Jsdoc_gen
+    chmod 777 docs.sh
     ./docs.sh
 done
