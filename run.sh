@@ -1,5 +1,6 @@
 #!/bin/bash
 npm install
+mkdir gitRespo
 node gitClone.js
 node jsDoc.js
 for folder in gitRespo/*
