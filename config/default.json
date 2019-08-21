@@ -1,6 +1,14 @@
 {
     "gitRepo":[
         "https://github.com/tunghoang/wi-auth",
-        "https://github.com/tunghoang/wi-backend"
+        "https://github.com/tunghoang/wi-backend",
+        "https://github.com/tunghoang/wi-export",
+        "https://github.com/tunghoang/wi-import",
+        "https://github.com/tunghoang/misc-component",
+        "https://github.com/tunghoang/plot-toolkit",
+        "https://github.com/hoangBDuet/file-browser-angular",
+        "https://github.com/hoangBDuet/file-browser-backend",
+        "https://github.com/tunghoang/multi-well-plots",
+        "https://github.com/tunghoang/image-set-manager"
     ]
 }
